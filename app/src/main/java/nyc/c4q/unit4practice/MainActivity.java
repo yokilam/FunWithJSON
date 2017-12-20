@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("name", "yoke");
-            jsonObject.put("Pet",new JSONArray().put(new JSONObject().put("Dog", "Luna")));
+            jsonObject.put("Pet",new JSONArray().put(new JSONObject().put("Dog", "Luna"))
+                    .put(new JSONObject().put("Dog", "Ginger"))
+                            .put(new JSONObject().put("Dog", "Bread")));
             jsonObject.put("pets2",new JSONArray().put("Dog").put("Cat").put("JellyFish").put("hamster"));
             Log.e("HELLOYOKE", jsonObject.toString());
 

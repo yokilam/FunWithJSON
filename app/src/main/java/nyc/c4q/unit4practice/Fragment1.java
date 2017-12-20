@@ -49,7 +49,7 @@ public class Fragment1 extends Fragment {
                 fragment2.setArguments(bundle);
                 FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.addToBackStack(null).replace(R.id.fragment_container, fragment2);
+                fragmentTransaction.addToBackStack(null).replace(R.id.nested_fragment, fragment2);
                 fragmentTransaction.commit();
             }
         });
